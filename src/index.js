@@ -4,7 +4,9 @@ import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from '@apollo/react-hooks';
-
+import "skeleton-css/css/skeleton.css";
+import "normalize.css/normalize.css";
+import "./assets/sass/main.scss";
 import App from './App';
 
 const cache = new InMemoryCache();

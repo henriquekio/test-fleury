@@ -1,0 +1,12 @@
+@import "imports/variables";
+@import "imports/navbar";
+
+body, html {
+  min-height: 100vh;
+  background: #fff;
+  color: $text-color-primary;
+}
+
+#root {
+  height: 100%;
+}

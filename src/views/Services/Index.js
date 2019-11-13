@@ -1,10 +1,10 @@
 import React from 'react';
+import MainContent from "../../components/MainContent";
 
 const Index = () => {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <MainContent>
+    </MainContent>
   );
 };
 
