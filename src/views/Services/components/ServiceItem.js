@@ -11,7 +11,7 @@ const ServiceItem = (props) => {
       <div className="services__description">
         <h5>{service.title}</h5>
         <p>{service.subtitle}</p>
-        <Link>Saiba Mais</Link>
+        <Link to="/">Saiba Mais</Link>
       </div>
     </div>
   );

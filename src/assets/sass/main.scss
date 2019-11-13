@@ -3,11 +3,36 @@
 @import "imports/navbar";
 @import "imports/breadcrumbs";
 @import "imports/loader";
+@import "imports/animations";
 
 body, html {
   min-height: 100vh;
   background: #fff;
   color: $text-color-primary;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, .3);
 }
 
 #root {
@@ -20,9 +45,13 @@ body, html {
 
 .services {
   display: grid;
-  grid-template-columns: 2fr 1fr 5fr;
+  grid-template-columns: 2fr .8fr 5fr;
   padding: 2em 0;
   border-bottom: 1px solid #e5e5e5;
+  opacity: 0;
+  animation: fade-in .35s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
 }
 
 .services__image {
@@ -31,6 +60,7 @@ body, html {
 
 .services__description {
   grid-column: 3/3;
+
   h5 {
     font-size: 1.8rem;
     font-weight: 600;

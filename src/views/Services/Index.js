@@ -15,7 +15,7 @@ const Index = () => {
             {loading && <Fetching/>}
             {!loading &&
             !error &&
-            data.allServices.map(service => <ServiceItem {...{ service }} />)}
+            data.allServices.map(service => <ServiceItem {...{ service }} key={service.id} />)}
           </div>
         </div>
       </div>
