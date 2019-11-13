@@ -6,6 +6,7 @@ export const GET_ALL_SERVICES = gql`{
         title
         subtitle
         thumbnail
+        image
     }
 }`;
 

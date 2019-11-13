@@ -2,6 +2,7 @@
 @import "imports/helpers";
 @import "imports/navbar";
 @import "imports/breadcrumbs";
+@import "imports/loader";
 
 body, html {
   min-height: 100vh;
@@ -13,6 +14,36 @@ body, html {
   height: 100%;
 }
 
-.container{
+.container {
   max-width: 1360px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 2fr 1fr 5fr;
+  padding: 2em 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.services__image {
+  grid-column: 1/2;
+}
+
+.services__description {
+  grid-column: 3/3;
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  a {
+    font-weight: bold;
+    color: $color-secundary;
+    text-decoration: none;
+  }
 }
