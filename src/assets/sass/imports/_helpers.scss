@@ -1,0 +1,25 @@
+//list inline
+%list-inline {
+  list-style: none;
+  margin: 0;
+
+  li {
+    display: inline;
+  }
+}
+
+//margins 0  to 100px
+@for $i from 1 through 10 {
+  .margin-top-#{$i * 5} {
+    margin-top: 5px * $i
+  }
+  .margin-right-#{$i * 5} {
+    margin-right: 5px * $i
+  }
+  .margin-bottom-#{$i * 5} {
+    margin-bottom: 5px * $i
+  }
+  .margin-left-#{$i * 5} {
+    margin-left: 5px * $i
+  }
+}

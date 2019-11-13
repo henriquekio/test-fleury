@@ -3,7 +3,14 @@ import MainContent from "../../components/MainContent";
 
 const Index = () => {
   return (
-    <MainContent>
+    <MainContent title="Serviços Diferenciados">
+      <div className="container">
+        <div className="row">
+          <div className="">
+
+          </div>
+        </div>
+      </div>
     </MainContent>
   );
 };

@@ -1,5 +1,7 @@
 @import "imports/variables";
+@import "imports/helpers";
 @import "imports/navbar";
+@import "imports/breadcrumbs";
 
 body, html {
   min-height: 100vh;
@@ -9,4 +11,8 @@ body, html {
 
 #root {
   height: 100%;
+}
+
+.container{
+  max-width: 1360px;
 }
