@@ -56,6 +56,12 @@ body::-webkit-scrollbar-thumb:active {
 
 .services__image {
   grid-column: 1/2;
+  min-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
 }
 
 .services__description {
