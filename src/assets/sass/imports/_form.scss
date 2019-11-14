@@ -71,8 +71,5 @@ input:focus ~ label, input:valid ~ label {
 }
 
 input:focus ~ .bar:before, input:focus ~ .bar:after {
-  border-left: none !important;
-  border-right: none !important;
-  border-top: none !important;
   width: 50%;
 }
