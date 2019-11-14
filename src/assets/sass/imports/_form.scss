@@ -1,0 +1,78 @@
+.material_input {
+  position: relative;
+  margin-bottom: 45px;
+  margin-top: 12px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: 1px solid #464646 !important;
+  border-radius: 0 !important;
+
+  &:focus {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    outline: none;
+    border-bottom: 1px solid $color-secundary !important;
+  }
+}
+
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+  font-size: 14px;
+  color: $color-secundary;
+  top: -20px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: $color-secundary;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  width: 50%;
+}

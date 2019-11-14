@@ -35,7 +35,9 @@ const Index = () => {
             {loading && <Fetching />}
             {!loading && !error && (
               <>
-                <ServiceFilter {...{ filterServices }} />
+                <ServiceFilter
+                  {...{ filterServices, count: filteredServices.length }}
+                />
                 {filteredServices.map(service => (
                   <ServiceItem {...{ service }} key={service.id} />
                 ))}
