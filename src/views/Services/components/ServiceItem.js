@@ -8,11 +8,11 @@ const ServiceItem = props => {
       <div
         className="services__image"
         style={{ backgroundImage: `url('${service.thumbnail}')` }}
-       />
+      />
       <div className="services__description">
         <h5>{service.title}</h5>
         <p>{service.subtitle}</p>
-        <Link to="/">Saiba Mais</Link>
+        <Link to={`/${service.id}`}>Saiba Mais</Link>
       </div>
     </div>
   );
