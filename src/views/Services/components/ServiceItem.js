@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const ServiceItem = props => {
@@ -16,6 +17,16 @@ const ServiceItem = props => {
       </div>
     </div>
   );
+};
+
+ServiceItem.propTypes = {
+  // eslint-disable-next-line react/require-default-props
+  service: PropTypes.shape({
+    thumbnail: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  })
 };
 
 export default ServiceItem;

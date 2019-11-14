@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
+/**
+ * Adiciona Breadcrumbs ao componente container
+ */
 const Breadcrumbs = () => {
   return (
     <div className="breadcrumbs">

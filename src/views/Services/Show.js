@@ -8,6 +8,9 @@ import Fetching from '../../components/Fetching';
 import Modal from '../../components/Modal';
 import ContentModal from './components/ContentModal';
 
+/**
+ * Services show component - View de detalhes de um serviço
+ */
 const Show = () => {
   const [modalOpened, setModalOpened] = useState(false);
   const { id } = useParams();

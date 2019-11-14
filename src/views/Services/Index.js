@@ -7,6 +7,9 @@ import Fetching from '../../components/Fetching';
 import ServiceItemNotFound from './components/ServiceItemNotFound';
 import ServiceFilter from './components/ServiceFilter';
 
+/**
+ * Services Index Component - View de serviços
+ */
 const Index = () => {
   const [services, setServices] = useState([]);
   const [filteredServices, setFilteredServices] = useState([]);

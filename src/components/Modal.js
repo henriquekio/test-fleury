@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { ReactComponent as CloseIcon } from '../assets/icons/close-icon.svg';
 
@@ -38,6 +39,11 @@ const Modal = (props) => {
     </>,
     document.getElementById('modal')
   );
+};
+
+Modal.propTypes = {
+  opened: PropTypes.bool,
+  title: PropTypes.string,
 };
 
 export default Modal;
