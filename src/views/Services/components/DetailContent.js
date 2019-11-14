@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 
 const DetailContent = props => {
   const {
@@ -60,6 +61,13 @@ const DetailContent = props => {
       </button>
     </>
   );
+};
+
+DetailContent.propTypes = {
+  data: Proptypes.shape({
+    service: Proptypes.object.isRequired,
+  }),
+  openmodal: Proptypes.func.isRequired,
 };
 
 export default DetailContent;

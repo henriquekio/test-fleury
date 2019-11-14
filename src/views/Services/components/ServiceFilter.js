@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ServiceFilter = (props) => {
   const handlerChangefilter = (e) => {
@@ -16,6 +17,11 @@ const ServiceFilter = (props) => {
       </div>
     </form>
   );
+};
+
+ServiceFilter.propTypes = {
+  filterServices: PropTypes.func.isRequired,
+  count: PropTypes.number.isRequired,
 };
 
 export default ServiceFilter;
