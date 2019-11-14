@@ -6,6 +6,7 @@
 @import "imports/animations";
 @import "imports/modal";
 @import "imports/form";
+@import "imports/responsive";
 
 body, html {
   min-height: 100vh;
@@ -46,8 +47,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .services {
-  display: grid;
-  grid-template-columns: 2fr .8fr 5fr;
   padding: 2em 0;
   border-bottom: 1px solid #e5e5e5;
   opacity: 0;
@@ -58,13 +57,11 @@ body::-webkit-scrollbar-thumb:active {
 
 .services__image {
   @extend %images-cover;
-  grid-column: 1/2;
   min-height: 200px;
   border-radius: 5px;
 }
 
 .services__description {
-  grid-column: 3/3;
 
   h5 {
     font-size: 1.8rem;
@@ -109,9 +106,7 @@ body::-webkit-scrollbar-thumb:active {
   @extend %images-cover;
   position: relative;
   top: 45px;
-  min-height: 380px;
   border-radius: 10px;
-  box-shadow: 35px -35px 0px 0px rgba(251, 234, 240, 1);
 }
 
 .service-detail__sobre {
@@ -120,8 +115,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .sobre__container {
-  column-count: 2;
-  column-gap: 205px;
   margin-bottom: 1em;
   border-bottom: 1px solid #efefef;
 
@@ -131,7 +124,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .service-detail__mais {
-  min-height: 300px;
   @extend %images-cover;
   border-radius: 10px;
 }
