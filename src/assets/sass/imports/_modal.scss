@@ -13,9 +13,10 @@
 
   &__container {
     background: white;
-    padding: 1em;
+    padding: 1em 2em;
     border-radius: 10px;
-    margin-top: 15%;
+    margin-top: 10%;
+    position: relative;
 
     &.small {
       width: 20%;
@@ -23,8 +24,46 @@
   }
 }
 
+.modal__close {
+  background: transparent;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  svg {
+    width: 10px;
+    height: 10px;
+    fill: #464646;
+  }
+}
+
 .modal__title {
   color: $color-secundary;
   font-weight: bold;
   font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.modal__list {
+  margin-top: 1em;
+
+  li {
+    display: grid;
+    grid-template-columns: 1.2fr 6fr;
+    align-items: center;
+
+    svg {
+      max-width: 25px;
+      max-height: 25px;
+      fill: $color-secundary;
+      margin-right: 2em;
+    }
+
+    p {
+      margin: 0;
+      font-weight: bold;
+      color: $color-secundary;
+    }
+  }
 }
