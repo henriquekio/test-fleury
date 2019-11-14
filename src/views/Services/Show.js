@@ -5,6 +5,7 @@ import { GET_SERVICE_DETAIL } from './Queries/ServicesQueries';
 import MainContent from '../../components/MainContent';
 import DetailContent from './components/DetailContent';
 import Fetching from '../../components/Fetching';
+import Modal from "../../components/Modal";
 
 const Show = () => {
   const { id } = useParams();
@@ -23,6 +24,7 @@ const Show = () => {
       </div>
       {loading && <Fetching />}
       {!loading && !error && <DetailContent {...{ data }} />}
+      <Modal open={true}/>
     </MainContent>
   );
 };

@@ -12,7 +12,7 @@ const DetailContent = props => {
           <div className="row">
             <div className="five columns">
               <h2 className="service-detail__sub-title">{service.title}</h2>
-              <div dangerouslySetInnerHTML={{ __html: service.description }} />
+              <div dangerouslySetInnerHTML={{ __html: service.description }}/>
             </div>
             <div className="five columns offset-by-two">
               <div
@@ -46,11 +46,12 @@ const DetailContent = props => {
             <div className="five columns offset-by-two">
               <h5 className="service-detail__title">Como Funciona</h5>
               <h4 className="service-detail__sub-title">Veja Mais Detalhes</h4>
-              <div dangerouslySetInnerHTML={{ __html: service.details }} />
+              <div dangerouslySetInnerHTML={{ __html: service.details }}/>
             </div>
           </div>
         </div>
       </section>
+      <button type="button" className="button-agendar">Agendar Exame</button>
     </>
   );
 };

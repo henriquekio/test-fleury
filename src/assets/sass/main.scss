@@ -4,6 +4,7 @@
 @import "imports/breadcrumbs";
 @import "imports/loader";
 @import "imports/animations";
+@import "imports/modal";
 
 body, html {
   min-height: 100vh;
@@ -117,18 +118,38 @@ body::-webkit-scrollbar-thumb:active {
   padding: 5em 0;
 }
 
-.sobre__container{
+.sobre__container {
   column-count: 2;
   column-gap: 205px;
   margin-bottom: 1em;
   border-bottom: 1px solid #efefef;
-  ul{
+
+  ul {
     list-style-type: disc;
   }
 }
-.service-detail__mais{
+
+.service-detail__mais {
   min-height: 300px;
   @extend %images-cover;
   border-radius: 10px;
 }
 
+.button-agendar {
+  position: fixed;
+  bottom: 8%;
+  background: $color-secundary;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  left: 50%;
+  margin-left: -93px;
+
+  &:active, &:hover, &:focus{
+    color: white;
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+}
