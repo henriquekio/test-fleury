@@ -1,6 +1,18 @@
+//text
+.thiny-text{
+  font-weight: 300;
+}
+
+//images
 .responsive-img {
   max-width: 100%;
   height: auto;
+}
+
+%images-cover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 //list inline

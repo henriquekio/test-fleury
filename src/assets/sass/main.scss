@@ -4,6 +4,7 @@
 @import "imports/breadcrumbs";
 @import "imports/loader";
 @import "imports/animations";
+@import "imports/modal";
 
 body, html {
   min-height: 100vh;
@@ -55,13 +56,10 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .services__image {
+  @extend %images-cover;
   grid-column: 1/2;
   min-height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 5px;
-  transition: all .2s ease-in-out;
 }
 
 .services__description {
@@ -81,5 +79,77 @@ body::-webkit-scrollbar-thumb:active {
     font-weight: bold;
     color: $color-secundary;
     text-decoration: none;
+  }
+}
+
+.service-detail__title {
+  color: $color-secundary;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .8em;
+}
+
+.service-detail__sub-title {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -.2em;
+    left: 0;
+    width: 65px;
+    height: 4px;
+    background: $color-primary;
+  }
+}
+
+.service-detail__image {
+  @extend %images-cover;
+  position: relative;
+  top: 45px;
+  min-height: 380px;
+  border-radius: 10px;
+  box-shadow: 35px -35px 0px 0px rgba(251, 234, 240, 1);
+}
+
+.service-detail__sobre {
+  background: #F8F8F8;
+  padding: 5em 0;
+}
+
+.sobre__container {
+  column-count: 2;
+  column-gap: 205px;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #efefef;
+
+  ul {
+    list-style-type: disc;
+  }
+}
+
+.service-detail__mais {
+  min-height: 300px;
+  @extend %images-cover;
+  border-radius: 10px;
+}
+
+.button-agendar {
+  position: fixed;
+  bottom: 8%;
+  background: $color-secundary;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  left: 50%;
+  margin-left: -93px;
+
+  &:active, &:hover, &:focus{
+    color: white;
+  }
+
+  &:hover {
+    opacity: .9;
   }
 }
