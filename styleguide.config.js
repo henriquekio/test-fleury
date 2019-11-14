@@ -1,4 +1,5 @@
 module.exports = {
+  pagePerSection: true,
   sections: [
     {
       name: 'Global Components',
@@ -6,14 +7,17 @@ module.exports = {
     },
     {
       name: 'View Components',
+      content: 'src/views/README.MD',
       sections: [
         {
           name: 'Services',
-          components: 'src/components/views/Services/*.js',
+          components: 'src/views/Services/*.js',
+          exampleMode: 'hide',
           sections: [
             {
               name: 'Service Components',
-              components: 'src/components/views/Services/components/*.js'
+              components: 'src/views/Services/components/*.js',
+              exampleMode: 'hide',
             }
           ]
         }
