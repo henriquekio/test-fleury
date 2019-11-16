@@ -39,7 +39,7 @@ Pelo complexidade do projeto, não há a necessidade de utilizar um grande frame
 Por ter menos recursos, o skeleton é mais leve, possui menos linhas de código e porporciona uma boa performance pelo baixo tempo de carregamento.
 
 > O lado negro não é mais poderoso, apenas mais rápido, mais fácil e mais sedutor.
-> - Mestre Yoda  
+>Mestre Yoda  
 
 #### SASS
 
