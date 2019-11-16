@@ -10,6 +10,8 @@ import ServiceFilter from './components/ServiceFilter';
 /**
  * Services Index Component - View de serviços
  */
+const links = [{ title: 'Serviços diferenciados', active: true }];
+
 const Index = () => {
   const [services, setServices] = useState([]);
   const [filteredServices, setFilteredServices] = useState([]);
@@ -31,7 +33,7 @@ const Index = () => {
   };
 
   return (
-    <MainContent title="Serviços Diferenciados">
+    <MainContent {...{ title: 'Serviços Diferenciados', links }}>
       <div className="container">
         <div className="row">
           <div className="twelve columns">
@@ -46,7 +48,7 @@ const Index = () => {
                 ))}
               </>
             )}
-            {!loading && filteredServices.length === 0 && (
+            {!loading && !error && filteredServices.length === 0 && (
               <ServiceItemNotFound />
             )}
           </div>

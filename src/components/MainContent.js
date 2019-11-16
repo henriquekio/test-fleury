@@ -1,26 +1,26 @@
 import React from 'react';
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Breadcrumbs from "./Breadcrumbs";
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Breadcrumbs from './Breadcrumbs';
 
-const MainContent = (props) => {
-  const { title = '' } = props;
+const MainContent = props => {
+  const { title = '', links = [] } = props;
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <main>
         <div className="container margin-top-30">
           <div className="row">
             <div className="twelve columns">
-              <Breadcrumbs/>
+              <Breadcrumbs {...{ links }} />
               {title.length > 0 && <h4>{title}</h4>}
             </div>
           </div>
         </div>
         {props.children}
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 };
