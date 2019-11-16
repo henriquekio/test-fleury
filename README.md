@@ -3,20 +3,24 @@
 Este projeto é um desafio de front-end.
 O Desafio é implementar um layout pré-determinado e consumir os dados de uma API em graphQL.
 
-Para realizar este desafio eu escolhi utilizar o framework React.js por ser rápido, de fácil uso e pelo seu grande uso pela comunidade.
+Para realizar este desafio eu escolhi utilizar o framework [React.js](https://pt-br.reactjs.org/) por ser rápido, de fácil uso e pelo seu grande uso pela comunidade.
+
+O resultado final desse teste pode ser visualizado neste [link disponibilizado pelo netlify](https://distracted-lewin-75a4ef.netlify.com/).
 
 ### Dependências Utilizadas
 Foram usadas as seguintes dependências para a realização do desafio: 
 
-- apollo-boost
-- @apollo/react-hooks
-- eslint
-- prettier
-- SASS
-- Normalize css
-- Skeleton css
-- prop-types
-- react-styleguidist
+- [apollo-boost](https://www.apollographql.com/docs/react/)
+- [@apollo/react-hooks](https://www.apollographql.com/docs/react/api/react-hooks/)
+- [eslint](https://eslint.org/)
+- [prettier](https://prettier.io/)
+- [SASS](https://sass-lang.com/)
+- [Normalize css](https://necolas.github.io/normalize.css/)
+- [Skeleton css](http://getskeleton.com/)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [react-styleguidist](https://react-styleguidist.js.org/)
+
+Além disso foi utilizado o [netlify](https://www.netlify.com/) para o deploy do projeto.
 
 #### Apollo-boost/@apollo/react-hooks
 Utilizado respectivamente (e a grosso modo =) )  para prover uma conexão com o graphql e integração com o react.
