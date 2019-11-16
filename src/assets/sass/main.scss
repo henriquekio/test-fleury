@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb:active {
     left: 0;
     width: 65px;
     height: 4px;
-    background: $color-primary;
+    background: $color-secundary;
   }
 }
 
@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb:active {
   left: 50%;
   margin-left: -93px;
 
-  &:active, &:hover, &:focus{
+  &:active, &:hover, &:focus {
     color: white;
   }
 
