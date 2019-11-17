@@ -3,7 +3,7 @@
 Este projeto é um desafio de front-end.
 O Desafio é implementar um layout pré-determinado e consumir os dados de uma API em graphQL.
 
-Para realizar este desafio eu escolhi utilizar o framework [React.js](https://pt-br.reactjs.org/) por ser rápido, de fácil uso e pelo seu grande uso pela comunidade.
+Para realizar este desafio escolhi utilizar o framework [React.js](https://pt-br.reactjs.org/) por ser rápido, e  pelo seu grande uso pela comunidade.
 
 O resultado final desse teste pode ser visualizado neste [link disponibilizado pelo netlify](https://distracted-lewin-75a4ef.netlify.com/).
 
@@ -39,7 +39,7 @@ Pelo complexidade do projeto, não há a necessidade de utilizar um grande frame
 Por ter menos recursos, o skeleton é mais leve, possui menos linhas de código e porporciona uma boa performance pelo baixo tempo de carregamento.
 
 > O lado negro não é mais poderoso, apenas mais rápido, mais fácil e mais sedutor.
->Mestre Yoda  
+> Mestre Yoda
 
 #### SASS
 
